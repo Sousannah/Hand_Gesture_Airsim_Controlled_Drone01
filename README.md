@@ -25,9 +25,29 @@ This repository provides a demonstration of controlling a drone in the AirSim en
 3. Perform hand gestures in front of your webcam.
 4. The recognized gestures will control the drone's movements within the AirSim environment.
 
-### Code Structure
-- **`airsim_hand_gesture_control.py`:** Main script integrating hand gesture recognition and drone control.
-- **`requirements.txt`:** Lists necessary Python libraries and versions.
+Certainly! Here's an additional section for your repository README to explain the structure involving two different code files, one dedicated to AirSim control and the other focused solely on MediaPipe for hand gesture recognition.
+
+---
+
+## Code Structure
+
+This repository provides two distinct code files catering to different functionalities:
+
+### AirSim Integrated Control
+- **File Name**: `airsim_hand_gesture_control.py`
+- **Description**: This script integrates both hand gesture recognition using MediaPipe and control commands for the drone in the AirSim environment. It detects hand gestures from the webcam feed using MediaPipe's Hand module and maps these gestures to specific movements for the drone (e.g., up, down, left, right) within the AirSim simulator.
+
+### MediaPipe Hand Gesture Recognition Only
+- **File Name**: `mediapipe_hand_gesture.py`
+- **Description**: This script focuses solely on hand gesture recognition using MediaPipe's Hand module. It captures the webcam feed, detects hand landmarks in real-time, and displays the hand landmarks with associated labels indicating the recognized gestures. This code does not involve AirSim integration and serves as a standalone demonstration of hand gesture recognition.
+
+Users can choose the script based on their requirements:
+- Use `airsim_hand_gesture_control.py` for integrating hand gesture control with the AirSim simulator.
+- Use `mediapipe_hand_gesture.py` for a standalone demonstration of hand gesture recognition without drone control functionalities.
+
+---
+
+This section clarifies the purpose and functionality of each code file, allowing users to select the appropriate script based on their specific needs—whether it's controlling a drone in AirSim or solely exploring hand gesture recognition using MediaPipe.
 
 ### Acknowledgments
 - **AirSim:** Utilized for the drone simulation environment.
@@ -40,6 +60,3 @@ This project is licensed under [MIT License](LICENSE).
 ### Contribution
 Contributions are welcome! Feel free to fork this repository, create pull requests, or open issues for any improvements, bug fixes, or suggestions.
 
----
-
-This overview provides a concise yet informative summary of the project, covering its purpose, features, requirements, usage instructions, code structure, acknowledgments, licensing, and encouragement for contributions.
