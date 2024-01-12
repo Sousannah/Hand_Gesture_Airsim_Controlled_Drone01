@@ -49,7 +49,7 @@ Users can choose the script based on their requirements:
 
 - Use `airsim_hand_gesture_control.py` for integrating hand gesture control with the AirSim simulator.
 - Use `mediapipe_hand_gesture.py` for a standalone demonstration of hand gesture recognition without drone control functionalities.
-- Use `AirSim_Controlled_Drone_With_Limitations.py` for a version with added limitations on drone movements for safety.
+- Use `airsim_limitations.py` for a version with added limitations on drone movements for safety.
 
 This section clarifies the purpose and functionality of each code file, allowing users to select the appropriate script based on their specific needs—whether it's controlling a drone in AirSim, exploring hand gesture recognition, or implementing safety measures in drone control.
 
